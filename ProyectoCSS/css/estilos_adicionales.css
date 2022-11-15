@@ -1,0 +1,55 @@
+/***********************************************
+
+ Autores: Integrante 1 - Integrante 2
+
+***********************************************/
+
+/* ORGANIZAR LAS DECLARACIONES EN BLOQUES*/
+
+/* ESTILOS GENERALES*/
+
+/* ESTILOS DE BARRA DE NAVEGACIÓN */
+
+/* ESTILOS DE ...*/
+
+.boton-menu{
+    list-style-type: none;
+    height: 50px;
+    width: 200px;
+    line-height: 40px;
+    background-color: blue;
+    text-transform: uppercase;
+    margin: 2px;
+    padding: 2px;
+}
+
+#menu-principal{
+    background-color: bisque;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+}
+
+.boton-menu:nth-child(1){
+    margin-right: 900px;
+    width: 90px;
+    height: 50px;
+    border-radius: 50%;
+    line-height: 40px;
+    text-align: center;
+    vertical-align: middle;
+    padding: 2px;
+    
+}
+
+.boton-menu:nth-child(5){
+    margin-left: 450px;
+    border-radius: 10%;
+}
+
+.material-icons{
+    color: rgb(200,200,200);
+    position: relative;
+    top: 6px;
+}
