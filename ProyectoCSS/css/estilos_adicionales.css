@@ -39,11 +39,21 @@
     line-height: 40px;
     text-align: center;
     vertical-align: middle;
-    padding: 2px;
-    
+    padding: 2px;    
 }
 
+.boton-menu:nth-child(2){
+    background-color: grey;
+}
+.boton-menu:nth-child(3){
+    background-color: grey;
+}
+
+.boton-menu:nth-child(4){
+    background-color: yellow;
+}
 .boton-menu:nth-child(5){
+    background-color: green;
     margin-left: 450px;
     border-radius: 10%;
 }
@@ -54,4 +64,66 @@
     top: 6px;
 }
 
-asdojasjdajsdjas
+/* #contenedor-general{
+    background-color: aqua;
+    height: 1000px;
+} */
+
+main{
+    display: flex;
+    flex-direction:row;
+}
+
+.plantilla-item{
+    display: flex;
+    margin: 5px;
+    flex-direction: row;
+    
+    
+}
+
+.plantilla-izq{
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    gap: 10px;
+    justify-content: center;
+}
+
+.plantilla-der{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    
+    justify-content: center;
+
+        
+}
+
+.precio{
+    font-size: 20px;
+}
+
+.medios-pago{
+    color: rgb(0, 166, 172) ;
+
+}
+.lista-detalles{
+    margin-top: 1px;
+    
+}
+
+.barra-secundaria{
+    display: flex;
+    flex-direction: column;
+    background-color: aqua;
+    margin-right: 100px; 
+    position:absolute;
+    right: 0px;
+    width: 350px;
+    height: 100px;
+}
+.plantilla-secundaria{
+    background-color: antiquewhite;
+    margin: 29px;
+}
