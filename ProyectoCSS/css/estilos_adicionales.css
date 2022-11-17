@@ -17,10 +17,10 @@
     height: 50px;
     width: 200px;
     line-height: 40px;
-    background-color: blue;
-    text-transform: uppercase;
+    background-color: blue;  
     margin: 2px;
     padding: 2px;
+
 }
 
 #menu-principal{
@@ -29,7 +29,17 @@
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: flex-end;
+    position:relative;
 }
+
+#btn-perfil{
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin-bottom: 20px;
+
+}
+
 
 .boton-menu:nth-child(1){
     margin-right: 900px;
@@ -47,7 +57,16 @@
 }
 .boton-menu:nth-child(3){
     background-color: grey;
+   
+
 }
+.plantilla-item:nth-child(3){
+    margin-left: -600px;
+    margin-top: 315px;
+   
+
+}
+
 
 .boton-menu:nth-child(4){
     background-color: yellow;
@@ -56,6 +75,7 @@
     background-color: green;
     margin-left: 450px;
     border-radius: 10%;
+    
 }
 
 .material-icons{
@@ -64,22 +84,20 @@
     top: 6px;
 }
 
-/* #contenedor-general{
-    background-color: aqua;
-    height: 1000px;
-} */
+
 
 main{
     display: flex;
-    flex-direction:row;
+    flex-direction: column;
+    
 }
 
 .plantilla-item{
     display: flex;
     margin: 5px;
-    flex-direction: row;
-    
-    
+    flex-direction: row; 
+   
+
 }
 
 .plantilla-izq{
@@ -93,11 +111,8 @@ main{
 .plantilla-der{
     display: flex;
     flex-direction: column;
-    margin: 20px;
-    
-    justify-content: center;
-
-        
+    margin: 20px; 
+    justify-content: center; 
 }
 
 .precio{
@@ -116,14 +131,69 @@ main{
 .barra-secundaria{
     display: flex;
     flex-direction: column;
-    background-color: aqua;
+    background-color: cadetblue;
     margin-right: 100px; 
-    position:absolute;
+    position: absolute;
+    margin-top: 10px;
     right: 0px;
-    width: 350px;
-    height: 100px;
+    width: 400px;
+    height: 650px;
 }
 .plantilla-secundaria{
     background-color: antiquewhite;
     margin: 29px;
+    height: 100px;
+    
+}
+
+.footer{
+    display: flex;
+    position: relative;
+}
+
+@media screen and (max-width:1100px){
+    #menu-principal{
+        
+        display: flex;
+        flex-direction: column;       
+        justify-content: center;
+    }
+   
+    .boton-menu:nth-child(5){
+        
+        margin-left: 0px;
+        border-radius: 10%;
+        margin-bottom: 20px;
+    }
+    .boton-menu:nth-child(2){
+        margin-top: 60px;
+        background-color: grey;
+    }
+    .plantilla-item{
+        justify-content: left;
+    }
+    .plantilla-item:nth-child(3){
+        
+        margin-left: 0px;
+        margin-top: 0px;
+       
+    
+    }
+   
+}
+
+@media screen and (min-width:1100px){
+    main{
+        display: flex;
+        flex-wrap: wrap;
+        flex: 3;
+        flex-direction: row;
+        margin-left: 300px;
+        margin-top: 50px; 
+    }
+    .barra-secundaria{
+        
+        position: absolute;
+    }
+
 }
